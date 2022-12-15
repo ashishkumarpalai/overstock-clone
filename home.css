@@ -46,6 +46,7 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     font-size: 20px;
+    background-color: #FF1F2C;
 }
 .serch2{
     width: 8%;
@@ -414,18 +415,32 @@
     line-height: 40px;
 }
 /* footer 2 */
-.footer2{
-    height: 100px;
-    background-color:#2F3337 ;
+#fot2{
+    height:100px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #2F3337;
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid wheat; */
 }
-.footer2 div{
+#fot2>div{
     width: 40%;
+    /* border: 1px solid yellow; */
 }
-.footer2 div div{
-    display: flex;
-            align-items: center;
-            gap: 10px;
+#fot2>div>p{
+    color: white;
+}
+#fot2ancor{
+    /* display: block; */
+    margin: auto;
+    font: bolder;
+    font-weight: 100px;
+}
+.fot2ancorinner{
+    /* display: block; */
+    font-size: 15px;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
 }
