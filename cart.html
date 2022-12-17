@@ -81,7 +81,7 @@
                 <h4 id="cartcount">sub total :$ <span id="sub-total">0</span> </h4>
                 <hr>
                 <h3 id="cartcount">Your total :$ <span id="your-total">0</span> </h3>
-                <button id="totalpricebutton"><a href="loginsignup.html"><i class="fa-solid fa-lock"></i>Check Out</a></button>
+                <button id="totalpricebutton"><a href=""><i class="fa-solid fa-lock"></i>Check Out</a></button>
             </div>   
         </div>
     </div>
@@ -181,6 +181,10 @@
     let total=document.getElementById("cart-total")
     let totalPrice=document.getElementById("sub-total")
     let yourtotal=document.getElementById("your-total")
+    let conform=document.getElementById("totalpricebutton")
+    conform.addEventListener("click",()=>{
+       alert("order successfully")
+    })
 
     let addtocartData=JSON.parse(localStorage.getItem("addtocart"))
     if(addtocartData==null) addtocartData=[]
