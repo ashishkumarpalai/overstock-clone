@@ -1,0 +1,242 @@
+ /* outerbox of navbar */
+ #outer{
+    width: 97%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height:100px;
+    
+}
+/* log of navbar */
+.logo{
+    width: 20%;
+    /* border: 1px solid blue; */
+    height: 60%;
+}
+.logosize{
+    width: 100%;
+    height: 100%;
+}
+/* serch bar of navbar */
+.serch{
+    width: 60%;
+    /* border: 1px solid blue; */
+    height: 60%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.serch1{
+    width: 105%;
+    height: 60%;
+    /* background-color: yellow */
+}
+.serch1inner{
+    width: 100%;
+    height: 84%;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.serch2inner{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+    background-color: #FF1F2C;
+}
+.serch2{
+    width: 8%;
+    height: 60%;
+}
+/* account section of navbar */
+.account{
+    width: 20%;
+    /* border: 1px solid blue; */
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.accountinner{
+    width: 30%;
+    text-align: center;
+    /* border: 1px solid yellow; */
+    
+}
+.accountinnerancer{
+    text-decoration: none;
+    font-size: 20px;
+}
+/* navbar 2 */
+.navbar{
+    height: 30px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    display: flex;
+}
+.navbar1{
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 17px;
+}
+.navbar1ancor{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.navbar2{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 17px;
+    /* border: 1px solid rgb(166, 31, 31); */
+}
+.navbar2ancor{
+    color: black;
+    text-decoration: none;
+}
+.navbar2ancor2{
+    color: red;
+    text-decoration: none;
+}
+#outer{
+    width: 95%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+/* hover */
+.navbar1inner:hover{
+    font-size: 18px;
+    text-decoration: underline;
+    
+}
+.navbar2inner:hover{
+    font-size: 18px;
+    text-decoration: underline;
+}
+/* shoping cart heading */
+.shopheading{
+    width: 80%;
+    margin: auto;
+}
+
+/* cart list */
+.cart{
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+#cart-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+.productinner{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    text-align: center;
+    background-color: rgb(231, 228, 221)
+}
+.productimage{
+    width: 100%;
+}
+button{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+button:hover{
+    font-size: 15px;
+    background-color: #FF1F2C;
+}
+#cartpriceshow{
+    text-align: center;
+    width: 20%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#promocode{
+    border: 1px solid black;
+}
+#promocode>a{
+    color: #2F3337;
+    text-decoration: none;
+}
+#totalprice{
+    border: 1px solid black;
+}
+#totalpricebutton>a{
+    color: #2F3337;
+    text-decoration: none;
+}
+/* footer1 */
+.footer1{
+    background-color:#545658 ;
+    
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.footer1>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    color: white;
+}
+.footer1>div>div>a{
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+}
+/* footer 2 */
+#fot2{
+    height:100px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #2F3337;
+    display: flex;
+    justify-content: space-around;
+    /* margin: auto; */
+}
+#fot2>div{
+    width: 40%;
+    /* border: 1px solid yellow; */
+    padding-left: 100px;
+}
+#fot2>div>p{
+    color: white;
+}
+#fot2ancor{
+    /* display: block; */
+    margin: auto;
+    font: bolder;
+    font-weight: 100px;
+}
+.fot2ancorinner{
+    /* display: block; */
+    font-size: 15px;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+}
