@@ -90,6 +90,10 @@
     text-decoration: none;
     color: black;
 }
+.navbar1ancor:hover{
+    font-size: 18px;
+    text-decoration: underline;
+}
 .navbar2{
     width: 20%;
     display: flex;

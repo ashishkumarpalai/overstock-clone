@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        #outer{
+        width: 97%;
+        margin: auto;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height:100px;
+    }
+    /* log of navbar */
+    .logo{
+        width: 20%;
+        /* border: 1px solid blue; */
+        height: 60%;
+    }
+    .logosize{
+        width: 100%;
+        height: 100%;
+    }
+    /* serch bar of navbar */
+    .serch{
+        width: 60%;
+        /* border: 1px solid blue; */
+        height: 60%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .serch1{
+        width: 105%;
+        height: 60%;
+        /* background-color: yellow */
+    }
+    .serch1inner{
+        width: 100%;
+        height: 84%;
+        font-size: 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .serch2inner{
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: 20px;
+        background-color: #FF1F2C;
+    }
+    .serch2{
+        width: 8%;
+        height: 60%;
+    }
+    /* account section of navbar */
+    .account{
+        width: 20%;
+        /* border: 1px solid blue; */
+        height: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .accountinner{
+        width: 30%;
+        text-align: center;
+        /* border: 1px solid yellow; */
+        
+    }
+    .accountinnerancer{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    /* navbar 2 */
+    .navbar{
+        height: 30px;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        display: flex;
+    }
+    .navbar1{
+        width: 80%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 17px;
+    }
+    .navbar1ancor{
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    .navbar2{
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 17px;
+        /* border: 1px solid rgb(166, 31, 31); */
+    }
+    .navbar2ancor{
+        color: black;
+        text-decoration: none;
+    }
+    .navbar2ancor2{
+        color: red;
+        text-decoration: none;
+    }
+    #outer{
+        width: 95%;
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+    /* hover */
+    .navbar1inner:hover{
+        font-size: 18px;
+        text-decoration: underline;
+        
+    }
+    .navbar2inner:hover{
+        font-size: 18px;
+        text-decoration: underline;
+    }
+/* login signup */
+        /* Write all necessery css here  */
+        .container{
+            width: 50%;
+            margin: auto;
+            /* border: 1px solid red; */
+            /* height: 100px; */
+          display: flex;
+          gap: 10px;
+          
+        }
+        .container>div{
+            width: 50%;
+            /* border: 1px solid black; */
+        }
+        /* account popup hover */
+        #indiv{
+            margin-right: 50px;
+            background-color: white;
+            box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        #indiv a:hover{
+            text-decoration: underline;
+        }
+        #indiv a{
+            padding: 5px;
+            text-decoration: none;
+            display: block;
+        }
+        #asd:hover #indiv{
+            display: block;
+        }
+      </style>
+</head>
+<body>
+     <!-- navbar 1 -->
+     <div id="outer">
+        <!-- logo section of navbar -->
+        <div class="logo">
+            <a href="#"><img class="logosize" src="https://i.ibb.co/rm6RcLH/Untitled-design-1.png" alt="">
+            </a> 
+        </div>
+        <!-- serch section of navbar -->
+        <div class="serch">
+            <div class="serch1">
+                <input type="text" name="" class="serch1inner" placeholder="Search...everything you find ships for free">
+            </div>
+            <div class="serch2">
+                <button class="serch2inner"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <!-- account section of navbar -->
+        <div class="account">
+            <div id="asd" class="accountinner">
+                <a href="#" class="accountinnerancer"><i class="fa-regular fa-user"></i></a><br>
+                <a href="#" class="accountinnerancer">Account</a>
+                <div id="indiv">
+                    <a href="#"><b>Sign In</b></a>
+                    <a href="#">View your account and check your order status.</a>
+                    <hr>
+                    <a href="#"><b>Create an Account</b></a>
+                    <a href="#">track orders , save items to lists and more!</a>
+                    <hr>
+                    <a href="#">My Account</a>
+                    <a href="#">My Orders</a>
+                    <a href="#">My Reviews</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+            <div id="asd" class="accountinner">
+                <a href="#" class="accountinnerancer"><i class="fa-regular fa-heart"></i></a><br>
+                <a href="#" class="accountinnerancer">Lists</a>
+                <div id="indiv">
+                    <a href="#"><b>Favorites</b></a>
+                    <a href="#">Save for Later</a>
+                    <hr>
+                    <a href="#">View All My Lists</a>
+                    <a href="#">Find a List</a>
+                    
+                </div>
+            </div>
+            <div class="accountinner">
+                <a href="#" class="accountinnerancer"><i class="fa-solid fa-cart-shopping"></i></a><br>
+                    <a href="#" class="accountinnerancer">Cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- navabar 2 -->
+    <div class="navbar">
+        <!-- section 1 /div1 -->
+        <div class="navbar1">
+            <div class="navbar1inner"><a href="furniture.html" class="navbar1ancor">Furniture</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">Rugs</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">Decor</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">Bedding</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">Home</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">Kitchen</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">Outdoor</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">Lihting</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">Kids & Baby</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">Gifts</a></div>
+            <div class="navbar1inner"><a href="#" class="navbar1ancor">More</a></div>
+        </div>
+        <hr>
+        <!-- section2 or div2 -->
+        <div class="navbar2">
+            <div class="navbar2inner"><a href="#" class="navbar2ancor">Holiday</a></div>
+            <div class="navbar2inner"><a href="#" class="navbar2ancor2">Sales & Deals</a></div>
+        </div>
+    </div>
+    <!-- login sign up -->
+    <div class="container">
+        <div>
+          <h1>Create Account</h1>
+          <form >
+                <p>Name:</p>
+                <input type="text" id="name" placeholder="Name">
+                <p>Email Addresss:</p>
+                <input type="email" id="email" placeholder="Email Address">
+                <p>Password:</p>
+                <input type="password" id="password" placeholder="Password">
+                <input type="submit" placeholder="Account Creat" id="submit">
+          </form>  
+        </div>
+      <hr>
+      <div>
+        <h1>Sign In</h1>
+        <form  id="form2">
+                <p>Email Addresss:</p>
+                <input type="email" id="email2" placeholder="Email Address">
+                <p>Password:</p>
+                <input type="password" id="password2" placeholder="Password">
+                <input type="submit" id="submit2">
+        </form>
+      </div>
+    </div>
+</body>
+<script>
+    let myForm=document.querySelector("form")
+    let myForm2=document.getElementById("form2")
+
+    myForm.addEventListener("submit",function(event){
+        // event.preventDefault()
+        let formData={
+            name:myForm.name.value,
+            email:myForm.email.value,
+            password:myForm.password.value
+        }
+        let userData=JSON.parse( localStorage.getItem("userdata"))
+        
+        if(userData==null) userData=[]
+        
+        userData.push(formData)
+        localStorage.setItem("userdata",JSON.stringify(userData))
+    })
+    // console.log(userData)
+   let userData=JSON.parse(localStorage.getItem("userdata"))
+   myForm2.addEventListener("submit",(event)=>{
+    // event.preventDefault()
+    userData.forEach((element) => {
+        if (myForm2.email2.value==element.email&&myForm2.password2.value==element.password){
+            window.open("home.html")
+            // alert ("succesdd")
+        }
+        else if(myForm2.email2.value!=element.email){
+            alert ("email wrong")
+        }else if(myForm2.password2.value!=element.password){
+            alert ("password wrong")
+        }
+    });
+   })
+    
+</script>
+</html>
