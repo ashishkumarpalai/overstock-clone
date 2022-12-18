@@ -27,17 +27,37 @@
         </div>
         <!-- account section of navbar -->
         <div class="account">
-            <div class="accountinner">
-                <a href="#" class="accountinnerancer"><i class="fa-regular fa-user"></i></a><br>
-                    <a href="#" class="accountinnerancer">Account</a>
+            <div id="asd" class="accountinner">
+                <a href="loginsignup.html" class="accountinnerancer"><i class="fa-regular fa-user"></i></a><br>
+                <a href="loginsignup.html" class="accountinnerancer">Account</a>
+                <div id="indiv">
+                    <a href="#"><b>Sign In</b></a>
+                    <a href="#">View your account and check your order status.</a>
+                    <hr>
+                    <a href="#"><b>Create an Account</b></a>
+                    <a href="#">track orders , save items to lists and more!</a>
+                    <hr>
+                    <a href="#">My Account</a>
+                    <a href="#">My Orders</a>
+                    <a href="#">My Reviews</a>
+                    <a href="#">Help</a>
+                </div>
             </div>
-            <div class="accountinner">
+            <div id="asd" class="accountinner">
                 <a href="favorite.html" class="accountinnerancer"><i class="fa-regular fa-heart"></i></a><br>
-                    <a href="favorite.html" class="accountinnerancer">Lists</a>
+                <a href="favorite.html" class="accountinnerancer">Lists</a>
+                <div id="indiv">
+                    <a href="#"><b>Favorites</b></a>
+                    <a href="#">Save for Later</a>
+                    <hr>
+                    <a href="#">View All My Lists</a>
+                    <a href="#">Find a List</a>
+                    
+                </div>
             </div>
             <div class="accountinner">
                 <a href="cart.html" class="accountinnerancer"><i class="fa-solid fa-cart-shopping"></i></a><br>
-                    <a href="cart.html" class="accountinnerancer">Cart</a>
+                    <a href="cart" class="accountinnerancer">Cart</a>
             </div>
         </div>
     </div>
@@ -312,6 +332,7 @@
     let container=document.getElementById("product")
     let filterSelect=document.getElementById("filter")
 
+    // filter
     fetchData=[]
     filterSelect.addEventListener("change",()=>{
       let filtered=fetchData.filter((element)=>{
@@ -323,6 +344,17 @@
         }
       })
       displayProduct(filtered)
+    })
+    // sorting
+    document.getElementById("sortingselect").addEventListener("change",(e)=>{
+        let sortby=e.target.value;
+        if(sortby==="Price High-Low"){
+            let newData=fetchData.sort((a,b)=>+b.price - (+a.price) );
+            displayProduct(newData)
+        }else if(sortby==="Price Low-High"){
+            let newData=fetchData.sort((a,b)=>(+a.price -(+b.price)))
+            displayProduct(newData)
+        }
     })
     // fetch part
     fetch("product.json")
@@ -400,7 +432,7 @@
                 if(isAlreadyInFav===true){
                     alert("Product Already already in cart")
                 }else{
-                    addtocartData.push({...element})
+                    addtocartData.push({...element,"quantity":1})
                     localStorage.setItem("addtocart",JSON.stringify(addtocartData))
                     alert("Product Added To cart")
                 }

@@ -28,17 +28,37 @@
         </div>
         <!-- account section of navbar -->
         <div class="account">
-            <div class="accountinner">
+            <div id="asd" class="accountinner">
                 <a href="loginsignup.html" class="accountinnerancer"><i class="fa-regular fa-user"></i></a><br>
-                    <a href="loginsignup.html" class="accountinnerancer">Account</a>
+                <a href="loginsignup.html" class="accountinnerancer">Account</a>
+                <div id="indiv">
+                    <a href="#"><b>Sign In</b></a>
+                    <a href="#">View your account and check your order status.</a>
+                    <hr>
+                    <a href="#"><b>Create an Account</b></a>
+                    <a href="#">track orders , save items to lists and more!</a>
+                    <hr>
+                    <a href="#">My Account</a>
+                    <a href="#">My Orders</a>
+                    <a href="#">My Reviews</a>
+                    <a href="#">Help</a>
+                </div>
             </div>
-            <div class="accountinner">
+            <div id="asd" class="accountinner">
                 <a href="favorite.html" class="accountinnerancer"><i class="fa-regular fa-heart"></i></a><br>
-                    <a href="favorite.html" class="accountinnerancer">Lists</a>
+                <a href="favorite.html" class="accountinnerancer">Lists</a>
+                <div id="indiv">
+                    <a href="#"><b>Favorites</b></a>
+                    <a href="#">Save for Later</a>
+                    <hr>
+                    <a href="#">View All My Lists</a>
+                    <a href="#">Find a List</a>
+                    
+                </div>
             </div>
             <div class="accountinner">
                 <a href="cart.html" class="accountinnerancer"><i class="fa-solid fa-cart-shopping"></i></a><br>
-                    <a href="cart.css" class="accountinnerancer">Cart</a>
+                    <a href="cart" class="accountinnerancer">Cart</a>
             </div>
         </div>
     </div>
@@ -81,7 +101,7 @@
                 <h4 id="cartcount">sub total :$ <span id="sub-total">0</span> </h4>
                 <hr>
                 <h3 id="cartcount">Your total :$ <span id="your-total">0</span> </h3>
-                <button id="totalpricebutton"><a href="loginsignup.html"><i class="fa-solid fa-lock"></i>Check Out</a></button>
+                <button id="totalpricebutton"><a href=""><i class="fa-solid fa-lock"></i>Check Out</a></button>
             </div>   
         </div>
     </div>
@@ -181,6 +201,11 @@
     let total=document.getElementById("cart-total")
     let totalPrice=document.getElementById("sub-total")
     let yourtotal=document.getElementById("your-total")
+    let conform=document.getElementById("totalpricebutton")
+    conform.addEventListener("click",()=>{
+       alert("order successfully")
+       window.open("conform.html")
+    })
 
     let addtocartData=JSON.parse(localStorage.getItem("addtocart"))
     if(addtocartData==null) addtocartData=[]
