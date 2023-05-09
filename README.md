@@ -1,4 +1,34 @@
-# oceanic-payment-211
+# Now Open
+
+> Overstock is an online retailer that offers a wide range of products, including furniture, home decor, electronics, jewelry, and more. If you're interested in creating a project based on the Overstock website.
+
+# TechStack used
++ HTML
++ CSS
++ JAVASCRIPT
+
+# Content of Website
++ User Signup
++ User Login 
++ Home Page
++ Product Page
++ Menu/Product Page
++ Favorite Page
++ Cart Page
++ Payment Page
+
+
+# Functionalities
++ This Website is Furniture  
++ Login/Signup Page are Fully Functional
++ Fetching Data from Json API
++ Sorting Functionality(You can sort product by price Low to High/High to Low.)
++ Filtering Functionality(You can filter products by their Categories. When you Hover on menu in Nav Bar you will get to see all the categories.)
++ You can add your product in Favorite page
++ You can add your product in Add to cart 
++ You can conform Your orders
+
+
 
 ## Home Page
 ![Home](https://github.com/ashishkumarpalai/oceanic-payment-211/assets/112760336/196f6455-e576-4a1d-b1f1-045e21ba899d)
