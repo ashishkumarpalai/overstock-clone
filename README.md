@@ -1,6 +1,6 @@
 # Now Open
 
-> Overstock is an online retailer that offers a wide range of products, including furniture, home decor, electronics, jewelry, and more. If you're interested in creating a project based on the Overstock website.
+Overstock is an online retailer that offers a wide range of products, including furniture, home decor, electronics, jewelry, and more. If you're interested in creating a project based on the Overstock website.
 
 # TechStack used
 + HTML
